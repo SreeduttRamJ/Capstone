@@ -22,6 +22,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Plan (save to file)
+        working-directory: Project_12
         run: terraform plan -out=tfplan.out
 
       - name: Upload Terraform Plan Artifact

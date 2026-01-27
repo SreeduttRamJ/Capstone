@@ -28,6 +28,9 @@ jobs:
       - name: Upload Terraform Plan Artifact
         uses: actions/upload-artifact@v4
         with:
-          working-directory: Project_12
           name: plan-output
-          path: tfplan.out
+          path: Project_12/tfplan.out
+      - name: Download Terraform plan
+        uses: actions/download-artifact@v4
+        with:
+          name: plan-output

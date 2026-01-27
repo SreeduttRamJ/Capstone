@@ -21,3 +21,4 @@ What’s included:
 
 
 
+- Updated README for Project 6 PR requirement

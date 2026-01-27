@@ -26,6 +26,7 @@ jobs:
         run: terraform plan -out=tfplan.out
 
       - name: Upload Terraform Plan Artifact
+        working-directory: Project_12
         uses: actions/upload-artifact@v4
         with:
           name: plan-output

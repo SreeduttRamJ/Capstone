@@ -1,0 +1,30 @@
+name: GitOps Apply
+
+on:
+  push:
+    branches:
+      - main      # Apply only AFTER PR merges into main
+
+permissions:
+  contents: read
+
+jobs:
+  terraform-apply:
+    name: Apply Terraform Changes (GitOps)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Init (no backend)
+        run: terraform init -backend=false
+
+      - name: Terraform Plan
+        run: terraform plan -out=tfplan.out
+
+      - name: Terraform Apply (auto-approve)
+        run: terraform apply -auto-approve tfplan.out

@@ -1,53 +1,31 @@
-name: Terraform CI Validation
-
-
+name: Terraform Fmt/Validate/Plan
 
 on:
-
   push:
-
-    branches:
-
-      - main
-
+    branches: [ "main" ]
   pull_request:
 
-
-
 jobs:
-
-  terraform:
-
+  terraform-ci:
     runs-on: ubuntu-latest
-
-
-
     steps:
+      - uses: actions/checkout@v4
+      - uses: hashicorp/setup-terraform@v3
 
-    - name: Checkout code
+      - name: Terraform Fmt (check)
+        run: terraform fmt -recursive
 
-      uses: actions/checkout@v4
+      - name: Terraform Init (no backend)
+        run: terraform init -backend=false
 
+      - name: Terraform Validate
+        run: terraform validate
 
+      - name: Terraform Plan (save to file)
+        run: terraform plan -out=tfplan.out
 
-    - name: Setup Terraform
-
-      uses: hashicorp/setup-terraform@v3
-
-
-
-    - name: Terraform Format
-
-      run: terraform fmt -recursive
-
-
-
-    - name: Terraform Init
-
-      run: terraform init -backend=false
-
-
-
-    - name: Terraform Validate
-
-      run: terraform validate
+      - name: Upload Terraform Plan Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: plan-output
+          path: tfplan.out

@@ -1,0 +1,63 @@
+# === TERRAFORM STATE FILES ===
+
+terraform.tfstate
+
+terraform.tfstate.backup
+
+
+
+# === TERRAFORM INTERNAL FOLDERS ===
+
+.terraform/
+
+.terraform.lock.hcl
+
+
+
+# === LOCAL ENV FILES ===
+
+*.tfvars
+
+*.tfvars.json
+
+
+
+# === SENSITIVE FILES ===
+
+*.pem
+
+*.key
+
+*.crt
+
+
+
+# === LOGS ===
+
+*.log
+
+
+
+# === OS / EDITOR JUNK ===
+
+# macOS
+
+.DS_Store
+
+
+
+# Windows
+
+Thumbs.db
+
+
+
+# VSCode
+
+.vscode/
+
+
+
+# Linux temporary files
+
+*~

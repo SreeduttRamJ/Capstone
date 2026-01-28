@@ -1,0 +1,38 @@
+[33m31b59c9[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m Merge branch 'main' of https://github.com/SreeduttRamJ/Capstone into main
+[33m08c92c6[m Project2
+[33m27f0399[m[33m ([m[1;31morigin/main[m[33m)[m Merge pull request #7 from SreeduttRamJ/feature/gitops-change
+[33m2054f8d[m[33m ([m[1;31morigin/feature/gitops-change[m[33m, [m[1;32mfeature/gitops-change[m[33m)[m project 1
+[33ma5c40cf[m Merge pull request #6 from SreeduttRamJ/feature/gitops-change
+[33m4924661[m Project 1
+[33m53eab34[m Merge pull request #5 from SreeduttRamJ/feature/gitops-change
+[33m9bdf93f[m GitOPstestchange
+[33md4a6dad[m Project_18
+[33m65d2571[m Update gitops-apply.yml
+[33mafb7b0a[m Create gitops-apply.yml
+[33mbf6deb9[m Update terraform-ci.yml
+[33m54f0477[m Update terraform-ci.yml
+[33m21c73a3[m Update terraform-ci.yml
+[33m5e332a5[m project_12
+[33mc1e4f2f[m Update terraform-ci.yml
+[33m32edc30[m Update terraform-ci.yml
+[33m6590845[m Project_7
+[33mebf653d[m Merge branch 'main' of https://github.com/SreeduttRamJ/Capstone into main
+[33m6c174fc[m v1
+[33m9f9563b[m Project5 done
+[33m7e15d67[m Merge pull request #4 from SreeduttRamJ/feature-infra-change
+[33ma6fe26e[m[33m ([m[1;31morigin/feature-infra-change[m[33m, [m[1;32mfeature-infra-change[m[33m)[m Project 11: Infra branching update
+[33md14b56d[m Initial commit Project 11
+[33m6a62a1b[m Delete Project_7 directory
+[33mbc51ab7[m Delete Project_7/.github/workflows/terraform-ci.yml
+[33mcc9205f[m Update variables.tf
+[33mfd551ef[m Update README.md
+[33m87748ed[m Update terraform-ci.yml
+[33mc48de28[m Merge pull request #3 from SreeduttRamJ/feature/project6-update
+[33mbdbb230[m[33m ([m[1;31morigin/feature/project6-update[m[33m, [m[1;32mfeature/project6-update[m[33m)[m Added workflow
+[33m858e38c[m Merge pull request #2 from SreeduttRamJ/feature/project6-update
+[33m1d97a85[m Add Terraform CI validation
+[33mba3c96b[m Merge pull request #1 from SreeduttRamJ/feature/project6-update
+[33mc66b103[m Update: Document Project 6 change via PR
+[33m614b963[m terraform project out and var
+[33m34c56fb[m Initialize Terraform project
+[33m45753b3[m first commit
